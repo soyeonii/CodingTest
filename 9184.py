@@ -1,3 +1,5 @@
+import sys
+
 def w(a, b, c):
     # 종료 조건
     if a <= 0 or b <= 0 or c <= 0:
@@ -16,9 +18,10 @@ def w(a, b, c):
         
     return d[a][b][c]
         
+d = [[[0] * 21 for _ in range(21)] for _ in range(21)]
+
 while True:
-    d = [[[0] * 21 for _ in range(21)] for _ in range(21)]
-    a, b, c = map(int, input().split())    
+    a, b, c = map(int, sys.stdin.readline().split())    
     if a == b == c == -1:
-        break     
+        break
     print(f'w({a}, {b}, {c}) = {w(a, b, c)}')
