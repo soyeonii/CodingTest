@@ -6,6 +6,11 @@
 [bojlink]: https://www.acmicpc.net/problem/1012
 [codelink]: https://github.com/soyeonii/BOJ_Python/blob/main/1012.py
 
+- [미로 탐색][bojlink]: ([Python 코드][codelink])
+
+[bojlink]: https://www.acmicpc.net/problem/2178
+[codelink]: https://github.com/soyeonii/BOJ_Python/blob/main/2178.py
+
 - [바이러스][bojlink]: ([Python 코드][codelink])
 
 [bojlink]: https://www.acmicpc.net/problem/2606
