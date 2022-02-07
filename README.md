@@ -1,6 +1,11 @@
 # BOJ_Python
 
 ### DFS & BFS
+- [유기농 배추][bojlink]: ([Python 코드][codelink])
+
+[bojlink]: https://www.acmicpc.net/problem/1012
+[codelink]: https://github.com/soyeonii/BOJ_Python/blob/main/1012.py
+
 - [바이러스][bojlink]: ([Python 코드][codelink])
 
 [bojlink]: https://www.acmicpc.net/problem/2606
