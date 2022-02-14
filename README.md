@@ -10,6 +10,8 @@
 
 - [바이러스](https://www.acmicpc.net/problem/2606): ([Python 코드](https://github.com/soyeonii/BOJ_Python/blob/main/2606.py))
 
+- [나이트의 이동](https://www.acmicpc.net/problem/7562): ([Python 코드](https://github.com/soyeonii/BOJ_Python/blob/main/7562.py))
+
 ### 다이나믹 프로그래밍
 
 - [01타일](https://www.acmicpc.net/problem/1904): ([Python 코드](https://github.com/soyeonii/BOJ_Python/blob/main/1904.py))
