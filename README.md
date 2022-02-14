@@ -6,6 +6,11 @@
 [bojlink]: https://www.acmicpc.net/problem/1012
 [codelink]: https://github.com/soyeonii/BOJ_Python/blob/main/1012.py
 
+- [숨바꼭질][bojlink]: ([Python 코드][codelink])
+
+[bojlink]: https://www.acmicpc.net/problem/1697
+[codelink]: https://github.com/soyeonii/BOJ_Python/blob/main/1697.py
+
 - [미로 탐색][bojlink]: ([Python 코드][codelink])
 
 [bojlink]: https://www.acmicpc.net/problem/2178
