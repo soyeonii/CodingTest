@@ -5,7 +5,7 @@ input = sys.stdin.readline
 
 
 def BFS():
-    answer = set()
+    answer = []
 
     def pour(a, b):
         if not check[a][b]:
@@ -21,7 +21,7 @@ def BFS():
         c = C - (a + b)
 
         if a == 0:
-            answer.add(c)
+            answer.append(c)
 
         # A -> B
         water = min(a, B - b)
@@ -42,7 +42,7 @@ def BFS():
         water = min(c, B - b)
         pour(a, b + water)
 
-    return sorted(list(answer))
+    return sorted(answer)
 
 
 A, B, C = map(int, input().split())
