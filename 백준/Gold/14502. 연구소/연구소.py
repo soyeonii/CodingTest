@@ -27,18 +27,16 @@ def solution():
                 nx = x + dx[i]
                 ny = y + dy[i]
                 if 0 <= nx < N and 0 <= ny < M and nboard[nx][ny] == 0:
-                    nboard[nx][ny] = 2
+                    nboard[nx][ny] = 3
                     queue.append((nx, ny))
 
     def DFS(L):
         nonlocal answer
         if L == 3:
             nboard = deepcopy(board)
-            visited = [[False] * M for _ in range(N)]
             for i in range(N):
                 for j in range(M):
-                    if board[i][j] == 2 and not visited[i][j]:
-                        visited[i][j] = True
+                    if board[i][j] == 2:
                         BFS(i, j, nboard)
             answer = max(answer, count(nboard))
         else:
