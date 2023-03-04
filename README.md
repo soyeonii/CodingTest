@@ -24,6 +24,7 @@
 | [14502](https://www.acmicpc.net/problem/14502) | [연구소](백준/Gold/14502. 연구소/연구소.py)                    | 구현, 그래프 이론, 브루트포스, 그래프 탐색, BFS                 |
 | [14503](https://www.acmicpc.net/problem/14503) | [로봇 청소기](백준/Gold/14503. 로봇 청소기/로봇 청소기.py)      | 구현, 시뮬레이션                                              |
 | [2251](https://www.acmicpc.net/problem/2251)   | [물통](백준/Gold/2251. 물통/물통.py)                          | 그래프 이론, 그래프 탐색, BFS, DFS                             |
+| [1525](https://www.acmicpc.net/problem/1525)   | [퍼즐](백준/Gold/1525. 퍼즐/퍼즐.py)                          | 자료 구조, 그래프 이론, 그래프 탐색, BFS, 해시                  |
 
 <!-- ## Programmers
 
