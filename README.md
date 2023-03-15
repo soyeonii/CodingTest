@@ -26,7 +26,7 @@
 | [14503](https://www.acmicpc.net/problem/14503) | [로봇 청소기](백준/Gold/14503. 로봇 청소기/로봇 청소기.py)      | 구현, 시뮬레이션                                              |
 | [2251](https://www.acmicpc.net/problem/2251)   | [물통](백준/Gold/2251. 물통/물통.py)                          | 그래프 이론, 그래프 탐색, BFS, DFS                             |
 | [1525](https://www.acmicpc.net/problem/1525)   | [퍼즐](백준/Gold/1525. 퍼즐/퍼즐.py)                          | 자료 구조, 그래프 이론, 그래프 탐색, BFS, 해시                  |
-| [13549](https://www.acmicpc.net/problem/13549) | [숨바꼭질 3](백준/Gold/13549. 숨바꼭질 3/숨바꼭질 3.py)        | 그래프 이론, 그래프 탐색, BFS, 데이크스트라, 0-1 BFS            |
+| [13549](https://www.acmicpc.net/problem/13549) | [숨바꼭질 3](백준/Gold/13549. 숨바꼭질 3/숨바꼭질 3.py)        | 그래프 이론, 그래프 탐색, BFS, 데이크스트라, 0-1 BFS            |
 | [9019](https://www.acmicpc.net/problem/9019)   | [DSLR](백준/Gold/9019. DSLR/DSLR.py)                         | 그래프 이론, 그래프 탐색, BFS                                  |
 
 
