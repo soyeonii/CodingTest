@@ -6,8 +6,7 @@ def solution(board, moves):
     for move in moves:
         for i in range(n):
             if board[i][move-1] != 0:
-                doll = board[i][move-1]
-                if basket and doll == basket[-1]:
+                if basket and board[i][move-1] == basket[-1]:
                     basket.pop()
                     answer += 2
                 else:
