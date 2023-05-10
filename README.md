@@ -27,7 +27,7 @@
 | [1806](https://www.acmicpc.net/problem/1806)    | [부분합](백준/Gold/1806. 부분합/부분합.py)                     | 누적합, 투 포인터                                      |
 | [10986](https://www.acmicpc.net/problem/10986)  | [나머지 합](백준/Gold/10986. 나머지 합/나머지 합.py)           | 수학, 누적합                                           |
 | [15686](https://www.acmicpc.net/problem/15686)  | [치킨 배달](백준/Gold/15686. 치킨 배달/치킨 배달.py)           | 구현, 브루트포스, 백트래킹                              |
-| [14500](https://www.acmicpc.net/problem/14500)  | [테트로미노 ](백준/Gold/14500. 테트로미노/테트로미노.py)       | 구현, 브루트포스                                        |
+| [14500](https://www.acmicpc.net/problem/14500)  | [테트로미노](백준/Gold/14500. 테트로미노/테트로미노.py)        | 구현, 브루트포스                                        |
 
 
 ## Programmers
