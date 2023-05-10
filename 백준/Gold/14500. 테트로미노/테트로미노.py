@@ -2,8 +2,8 @@ import sys
 
 input = sys.stdin.readline
 
-dx = [-1, 0, 1, 0]
-dy = [0, 1, 0, -1]
+dx = [0, 1, 0]
+dy = [1, 0, -1]
 
 answer = 0
 N, M = map(int, input().split())
@@ -16,7 +16,7 @@ def DFS(x, y, total, L):
     if L == 3:
         answer = max(answer, total)
     else:
-        for i in range(4):
+        for i in range(3):
             nx = x + dx[i]
             ny = y + dy[i]
             if 0 <= nx < N and 0 <= ny < M and not visited[nx][ny]:
