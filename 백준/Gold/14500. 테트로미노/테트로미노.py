@@ -2,52 +2,37 @@ import sys
 
 input = sys.stdin.readline
 
-tetrominos = [
-    [[(0, 1), (0, 2), (0, 3)], [(1, 0), (2, 0), (3, 0)]],
-    [[(0, 1), (1, 0), (1, 1)]],
-    [
-        [(1, 0), (2, 0), (2, 1)],
-        [(0, 1), (0, 2), (1, 0)],
-        [(0, 1), (1, 1), (2, 1)],
-        [(-1, 2), (0, 1), (0, 2)],
-        [(-2, 1), (-1, 1), (0, 1)],
-        [(1, 0), (1, 1), (1, 2)],
-        [(0, 1), (1, 0), (2, 0)],
-        [(0, 1), (0, 2), (1, 2)],
-    ],
-    [
-        [(1, 0), (1, 1), (2, 1)],
-        [(-1, 1), (-1, 2), (0, 1)],
-        [(-1, 1), (0, 1), (1, 0)],
-        [(0, 1), (1, 1), (1, 2)],
-    ],
-    [
-        [(0, 1), (0, 2), (1, 1)],
-        [(-1, 1), (0, 1), (1, 1)],
-        [(-1, 1), (0, 1), (0, 2)],
-        [(1, 0), (1, 1), (2, 0)],
-    ],
-]
+dx = [-1, 0, 1, 0]
+dy = [0, 1, 0, -1]
 
 answer = 0
 N, M = map(int, input().split())
 board = [list(map(int, input().split())) for _ in range(N)]
+visited = [[False] * M for _ in range(N)]
 
-for tetromino in tetrominos:
-    for t in tetromino:
-        for x in range(N):
-            for y in range(M):
-                if (
-                    0 <= x + t[0][0]
-                    and x + t[-1][0] < N
-                    and 0 <= y + sorted(t, key=lambda x: x[1])[0][1]
-                    and y + sorted(t, key=lambda x: x[1])[-1][1] < M
-                ):
-                    total = board[x][y]
-                    for dx, dy in t:
-                        nx = x + dx
-                        ny = y + dy
-                        total += board[nx][ny]
-                    answer = max(answer, total)
+
+def DFS(x, y, total, L):
+    global answer
+    if L == 3:
+        answer = max(answer, total)
+    else:
+        for i in range(4):
+            nx = x + dx[i]
+            ny = y + dy[i]
+            if 0 <= nx < N and 0 <= ny < M and not visited[nx][ny]:
+                if L == 1:
+                    visited[nx][ny] = True
+                    DFS(x, y, total + board[nx][ny], L + 1)
+                    visited[nx][ny] = False
+                visited[nx][ny] = True
+                DFS(nx, ny, total + board[nx][ny], L + 1)
+                visited[nx][ny] = False
+
+
+for i in range(N):
+    for j in range(M):
+        visited[i][j] = True
+        DFS(i, j, board[i][j], 0)
+        visited[i][j] = False
 
 print(answer)
