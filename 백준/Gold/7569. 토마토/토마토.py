@@ -13,17 +13,12 @@ dz = [0, 0, 0, 1, 0, -1]
 
 def BFS():
     L = -1
-    unripe = 0
     queue = deque()
     for i in range(H):
         for j in range(N):
             for k in range(M):
                 if boxes[i][j][k] == 1:
                     queue.append((i, j, k))
-                elif boxes[i][j][k] == 0:
-                    unripe += 1
-    if not unripe:
-        return 0
     while queue:
         for _ in range(len(queue)):
             x, y, z = queue.popleft()
@@ -37,11 +32,15 @@ def BFS():
                     and 0 <= nz < M
                     and boxes[nx][ny][nz] == 0
                 ):
-                    unripe -= 1
                     boxes[nx][ny][nz] = 1
                     queue.append((nx, ny, nz))
         L += 1
-    return L if not unripe else -1
+    for i in range(H):
+        for j in range(N):
+            for k in range(M):
+                if boxes[i][j][k] == 0:
+                    return -1
+    return L
 
 
 print(BFS())
