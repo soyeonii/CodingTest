@@ -28,7 +28,7 @@
 | [10986](https://www.acmicpc.net/problem/10986) | [나머지 합](백준/Gold/10986. 나머지 합/나머지 합.py)       | 수학, 누적합                                       |
 | [15686](https://www.acmicpc.net/problem/15686) | [치킨 배달](백준/Gold/15686. 치킨 배달/치킨 배달.py)       | 구현, 브루트포스, 백트래킹                         |
 | [14500](https://www.acmicpc.net/problem/14500) | [테트로미노](백준/Gold/14500. 테트로미노/테트로미노.py)    | 구현, 브루트포스                                   |
-| [1753](https://www.acmicpc.net/problem/1753)   | [적록색약](백준/Gold/1753. 최단경로/최단경로.py)           | 그래프 이론, 다익스트라                            |
+| [1753](https://www.acmicpc.net/problem/1753)   | [최단경로](백준/Gold/1753. 최단경로/최단경로.py)           | 그래프 이론, 다익스트라                            |
 | [10026](https://www.acmicpc.net/problem/10026) | [적록색약](백준/Gold/10026. 적록색약/적록색약.py)          | 그래프 이론, 그래프 탐색, BFS, DFS                 |
 
 ## Programmers
