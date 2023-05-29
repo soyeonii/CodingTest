@@ -3,34 +3,28 @@ import sys
 input = sys.stdin.readline
 
 
-def check(x, y, size):
-    color = graph[x][y]
-    for i in range(x, x + size):
-        for j in range(y, y + size):
-            if graph[i][j] != color:
-                return -1
-    return color
+def check(x, y, n):
+    for i in range(x, x + n):
+        for j in range(y, y + n):
+            if image[i][j] != image[x][y]:
+                return False
+    return True
 
 
-def solution(x, y, size):
-    global answer
-    color = check(x, y, size)
-    if color == -1:
-        answer += "("
-        size //= 2
-        solution(x, y, size)
-        solution(x, y + size, size)
-        solution(x + size, y, size)
-        solution(x + size, y + size, size)
-        answer += ")"
+def QuadTree(x, y, n):
+    if check(x, y, n):
+        print(image[x][y], end="")
     else:
-        answer += color
+        print("(", end="")
+        n //= 2
+        QuadTree(x, y, n)
+        QuadTree(x, y + n, n)
+        QuadTree(x + n, y, n)
+        QuadTree(x + n, y + n, n)
+        print(")", end="")
 
 
 N = int(input())
-graph = [list(input().rstrip()) for _ in range(N)]
-answer = ""
+image = [list(input().rstrip()) for _ in range(N)]
 
-solution(0, 0, N)
-
-print(answer)
+QuadTree(0, 0, N)
