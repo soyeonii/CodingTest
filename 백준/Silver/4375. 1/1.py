@@ -15,4 +15,5 @@ while True:
             break
         else:
             result = result * 10 + 1
+            result %= n
             count += 1
