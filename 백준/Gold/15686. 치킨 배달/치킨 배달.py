@@ -3,24 +3,6 @@ import sys
 input = sys.stdin.readline
 INF = sys.maxsize
 
-N, M = map(int, input().split())
-board = [list(input().split()) for _ in range(N)]
-
-home = []
-chicken = []
-for i in range(N):
-    for j in range(N):
-        if board[i][j] == "1":
-            home.append((i, j))
-        elif board[i][j] == "2":
-            chicken.append((i, j))
-
-answer = INF
-n = len(chicken)
-stack = []
-check = [False] * n
-
-
 def DFS(start):
     global answer
     if len(stack) == M:
@@ -40,6 +22,22 @@ def DFS(start):
                 stack.pop()
                 check[i] = False
 
+N, M = map(int, input().split())
+board = [list(input().split()) for _ in range(N)]
+
+home = []
+chicken = []
+for i in range(N):
+    for j in range(N):
+        if board[i][j] == "1":
+            home.append((i, j))
+        elif board[i][j] == "2":
+            chicken.append((i, j))
+
+answer = INF
+n = len(chicken)
+stack = []
+check = [False] * n
 
 DFS(0)
 print(answer)
